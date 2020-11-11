@@ -6,7 +6,7 @@ class App extends React.Component {
     super(props)
     this.state = {
       // Add magic 8 ball outcomes to the array
-      answerArray: [],
+      answerArray: ['Yes', 'No', 'Totally', 'Not Today', 'You Wish', 'LMAO', 'In your dreams', 'Go for it', 'Just do it'],
       question: ""
     }
   }
@@ -15,8 +15,9 @@ class App extends React.Component {
     // destructures answerArray out of state
     const { answerArray } = this.state
     // write your code here!
+    return answerArray[Math.floor(Math.random() * answerArray.length)];
     // Update the return statement below to reflect the outcome of your code.
-    return this.state.question
+    return this.state.answerArray
   }
 
   handleChange = (e) => {
@@ -35,7 +36,7 @@ class App extends React.Component {
   render(){
     return (
       <div>
-        <h1>Magic 8 Ball</h1>
+        <h1>Magic</h1>
         <input
           id="inputBox"
           type='text'

@@ -1,10 +1,14 @@
 body{
-  margin: 1%;
-  text-align:center;
-  font-family: 'Anton', sans-serif;
-  height: 90vh;
+  margin:10px;
+  text-align: center;
+  background-image: url("https://magic-8ball.com/assets/images/magicBallStart.webp");
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  height: 1vh;
+  background-color: red;
 }
 h1{
   text-decoration: underline;
-  font-size: 40px;
+  font-size: 150px;
+  color: Gray;
+  text-align: ;
 }
